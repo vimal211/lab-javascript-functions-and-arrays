@@ -5,7 +5,7 @@ function greatestOfTwoNumbers(a, b) {
   } else if (b > a) {
     return b;
   } else {
-    return a, b;
+    return a;
   }
 }
 
@@ -213,14 +213,14 @@ function maximumProduct(matrix) {
   let result;
   for (let i = 0; i < matrix.length; i++) {
     for (let j = 0; j < matrix.length; j++) {
-      if (j - 5 >= 0) {
+      if (j - 3 >= 0) {
         result =
           matrix[i][j] * matrix[i][j - 1] * matrix[i][j - 2] * matrix[i][j - 3];
         if (product < result) {
           product = result;
         }
       }
-      if (i - 5 >= 0) {
+      if (i - 3 >= 0) {
         result =
           matrix[i][j] * matrix[i - 1][j] * matrix[i - 2][j] * matrix[i - 3][j];
         if (product < result) {
